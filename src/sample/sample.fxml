@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="100" maxWidth="350" minHeight="100" minWidth="200" xmlns="http://javafx.com/javafx/10.0.2-internal"
+          xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <columnConstraints>
+        <ColumnConstraints maxWidth="125" minWidth="125" prefWidth="125"/>
+        <ColumnConstraints maxWidth="125" minWidth="125" prefWidth="125"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="30.0" prefHeight="30.0"/>
+        <RowConstraints minHeight="30.0" prefHeight="30.0"/>
+        <RowConstraints/>
+    </rowConstraints>
+    <children>
+        <Button fx:id="btnSorsol" mnemonicParsing="false" onAction="#sorsol" text="Sorsol"/>
+        <Label fx:id="lblSorsoltSzam" text="0" GridPane.columnIndex="1"/>
+        <Label fx:id="lblSorsoltSzamok" text="0" GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.rowSpan="2"/>
+    </children>
+</GridPane>
